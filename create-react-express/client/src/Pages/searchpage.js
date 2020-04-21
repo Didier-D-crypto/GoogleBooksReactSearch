@@ -7,7 +7,7 @@ function Searchpage() {
 
     return (
         <div>
-            <p>Hello World</p>
+            <p>Google Books Search</p>
             <button onClick = {searchFunction}> Search Books </button>
             <input onChange={e => {setTerm(e.target.value)}}></input>
 
