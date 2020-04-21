@@ -7,12 +7,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-         <Searchpage/>
-          <h2></h2>
+          
+          <h2>(React) Google Books Search</h2>
+          <p>Search for and Save Books of Interest</p>
         </div>
 
         <p className="App-intro">
-         
+         <Searchpage />
         </p>
       </div>
     );

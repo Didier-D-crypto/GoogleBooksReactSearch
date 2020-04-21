@@ -8,9 +8,10 @@ function Searchpage() {
     return (
         <div>
             <p>Google Books Search</p>
-            <button onClick = {searchFunction}> Search Books </button>
+            <p>Enter the searched item below:</p>
+            <button onClick = {searchFunction}> Search Enumeration </button>
             <input onChange={e => {setTerm(e.target.value)}}></input>
-
+             
             
 
     
