@@ -14,8 +14,7 @@ class App extends Component {
 
         <p className="App-intro">
          <Searchpage />
-        </p>
-      </div>
+      </p></div>
     );
   }
 }
