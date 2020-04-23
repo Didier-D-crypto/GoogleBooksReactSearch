@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import axios from 'axios'; 
 function Searchpage() {
     const [searchTerm, setTerm]= useState('');
-    function searchFunction (e) {e.preventDefault(); console.log (searchTerm) }
+    let [booklist, setBooklist]= useState(''); 
+     // function searchFunction (e) {e.preventDefault(); console.log (searchTerm) }
  const searchBooks = term => {
      return axios.get("https://www.googleapis.com/books/v1/volumes", {
          params:{
@@ -12,6 +13,7 @@ function Searchpage() {
  }
 
  function handleSubmit( event ) {
+
      event.preventDefault()
      searchBooks(searchTerm)
      .then (  //async portion
@@ -20,8 +22,17 @@ function Searchpage() {
                  data: {items: booklist}
              }
          ) => {
-            console.log()
+          const thisBooklist = booklist.map(book => {
+              return {
+                  bookId: book.id, 
+                  title: book.volumeInfo.title, 
+                  authors: book.volumeInfo.authors,
+                  description: book.volumeInfo.description, 
+                  image: book.volumeInfo.imageLinks.thumbnail, 
 
+              }
+          } )
+           return setBooklist(thisBooklist);
          }
      )
 
