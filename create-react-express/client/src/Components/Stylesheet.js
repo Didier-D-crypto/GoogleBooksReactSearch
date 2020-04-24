@@ -4,7 +4,7 @@ import './App.css'
 function Stylesheet() {
     return (
         <div>
-            <h2 className= 'primary'>Google Books Search</h2>
+            <h1 className= 'primary'>Google Books Search</h1>
         </div>
     )
 }
