@@ -38,6 +38,8 @@ function Searchpage() {
 
  }
 
+    function (smart)
+
     return (
         <div>
             <p>Google Books Search</p>
@@ -65,7 +67,7 @@ function Searchpage() {
                               {
                                   book.image
                               }
-
+                              <button onClick = {smart} >Saved Book</button>
                               </div>
                       )
                   })
