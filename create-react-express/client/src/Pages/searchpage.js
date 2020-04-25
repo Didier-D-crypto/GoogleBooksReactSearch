@@ -38,7 +38,7 @@ function Searchpage() {
 
  }
 
-    function (smart)
+    // function (smart)
 
     return (
         <div>
@@ -67,7 +67,7 @@ function Searchpage() {
                               {
                                   book.image
                               }
-                              <button onClick = {smart} >Saved Book</button>
+                              {/* <button onClick = {smart} >Saved Book</button> */}
                               </div>
                       )
                   })
