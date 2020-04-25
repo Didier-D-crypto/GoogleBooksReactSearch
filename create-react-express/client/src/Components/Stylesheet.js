@@ -4,8 +4,11 @@ import React from 'react'
 function Stylesheet() {
     return (
         <div>
-            <h1 className= 'primary'>Google Books Search</h1>
+            
+           <i class="fas fa-book"></i>
+               <h1 className= 'primary'>Google Books Search</h1>
         </div>
+    
     )
 }
 
