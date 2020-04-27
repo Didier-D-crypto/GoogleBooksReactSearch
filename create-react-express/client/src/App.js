@@ -3,7 +3,9 @@ import React, { Component } from "react";
 import "./App.css";
 import Searchpage from "./Pages/searchpage";
 import Stylesheet from "./Components/Stylesheet";
-class App extends Component {
+
+class App extends Component{
+
   render() {
     return (
       <div className="App">
@@ -15,6 +17,8 @@ class App extends Component {
 
         <p className="App-intro">
          <Searchpage />
+      
+        
       </p></div>
 
      
